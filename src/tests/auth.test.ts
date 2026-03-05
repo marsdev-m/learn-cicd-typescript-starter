@@ -13,6 +13,6 @@ describe('APIKey', () => {
     test('returns API key from header', () => {
         const APIKey = getAPIKey(reqMock['headers']);
         expect(APIKey).toBeTypeOf('string');
-        expect(APIKey).toBe('XXX123-456-789');
+        expect(APIKey).toBe('123-456-789');
     });
 });
